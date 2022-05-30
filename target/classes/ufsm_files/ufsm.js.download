@@ -1,0 +1,29 @@
+;var ufsm = {
+    components      : {},
+    utils           : {},
+    cpd             : {},
+    academico       : {},
+    concursos       : {},
+    cursos          : {
+        NIVEIS_GRADUACAO        : ['3'],
+        NIVEIS_POS_GRADUACAO    : ['6','10','16'],
+        PERIODO                 : {
+            '100'   :   {   artigo: 'º', descricao: 'Ano'      },
+            '200'   :   {   artigo: 'º', descricao: 'Semestre' },
+            '300'   :   {   artigo: 'º', descricao: 'Trimestre'},
+            '400'   :   {   artigo: 'ª', descricao: 'Etapa'    }
+        },
+        PERIODO_QUALQUER        : '99',
+        TIPO_EAD                : '7'
+    },
+    departamentos   : {},
+    documentos      : {},
+    ementario       : {},
+    grupos          : {},
+    orcamento       : {},
+    patrimonio      : {},
+    proplan         : {},
+    servidor        : {},
+    webservice      : { host: "https://portal.ufsm.br"},
+    widgets         : {}
+};

@@ -1,0 +1,38 @@
+var applied = localStorage.getItem("applied") == "true";
+if (applied){
+	var timeInMs = Date.now();
+	var url_css = "/app/themes/ufsm/css/contraste.css?Ver="+timeInMs;
+	var lnk = document.createElement('link');
+	lnk.setAttribute('type', "text/css" );
+	lnk.setAttribute('rel', "stylesheet" );
+	lnk.setAttribute('id', "contraste" );
+	lnk.setAttribute('href', url_css );  
+  jQuery('body').addClass('contraste');
+	document.getElementsByTagName("head").item(0).appendChild(lnk);
+} else {
+	if(jQuery("body").hasClass("contraste")){
+		jQuery('body').removeClass('contraste');
+        jQuery("#contraste").remove();
+	}
+}
+function contraste(){
+	if(!applied){
+		var timeInMs = Date.now();
+		var url_css = "/app/themes/ufsm/css/contraste.css?Ver="+timeInMs;
+		var lnk = document.createElement('link');
+		lnk.setAttribute('type', "text/css" );
+		lnk.setAttribute('rel', "stylesheet" );
+		lnk.setAttribute('id', "contraste" );
+		lnk.setAttribute('href', url_css );  
+        jQuery('body').addClass('contraste');
+		document.getElementsByTagName("head").item(0).appendChild(lnk);
+		applied = true;
+	} else { 
+		if(jQuery("body").hasClass("contraste")){
+			jQuery('body').removeClass('contraste');
+					jQuery("#contraste").remove();
+		}
+		applied = false;
+	}
+	localStorage.setItem("applied", applied);
+}

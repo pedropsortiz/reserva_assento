@@ -1,0 +1,17 @@
+//Add no follow to internal links
+$(document).ready(function () {
+    var selector=[
+        "a[href*='dev.ufsm.br']",
+        "a[href*='ufsm.br']",
+        "a[href^='javascript']",
+        "a[href^='#']",
+        "a[href^='/']",
+        "a[href^='?']",
+        "a:not([href])",
+    ]; 
+    var selectores = "a:not("+ selector.join(',') +")";
+
+    $(selectores).attr({
+        target: "_blank"
+    });
+});
