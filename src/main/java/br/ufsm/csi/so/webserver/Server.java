@@ -31,22 +31,27 @@ public class Server {
                 String[] linha0 = linhas[0].split(" ");
                 String metodo = linha0[0];
                 String recurso = linha0[1];
+                System.out.println("Linhas 0 casa 2" + linha0[2]);
+
 
                 if (metodo.equals("GET")) {
+                    System.out.println("Antes: " + recurso);
                     recurso = recurso.substring(1);
-                    File file = new File("src\\main\\resources\\" + recurso);
+                    System.out.println("Depois: " + recurso);
+                    String Url = "src\\main\\webapp\\" + recurso;
+                    File file = new File(Url);
                     if (file.exists()) {
                         Path path = file.toPath();
                         String mimeType = Files.probeContentType(path);
+                        System.out.println("Mime: " + mimeType);
                         String head = HEADER;
                         if (mimeType != null) {
                             head = HEADER.replaceAll("mime", mimeType);
                         }
                         out.write(head.getBytes(StandardCharsets.UTF_8));
-                        FileInputStream fin = new FileInputStream(file);
+                        FileInputStream fin = new FileInputStream(file.getPath());
                         byte[] buf_arquivo = new byte[1024];
                         int read;
-
                         do {
                             read = fin.read(buf_arquivo);
                             if (read > 0) {
@@ -55,6 +60,7 @@ public class Server {
                         } while (read > 0);
                         fin.close();
                     } else {
+                        System.out.println("recurso " + recurso + " nao encontrado.");
                         out.write("HTTP/1.1 404 NOT FOUND\n\n".getBytes(StandardCharsets.UTF_8));
                     }
                 }

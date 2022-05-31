@@ -1,6 +1,16 @@
 <html>
 <head>
     <link rel="stylesheet" href="resources/style/indexStyle.scss">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        var inputs = $('[type="checkbox"]');
+        inputs.on('click', function() {
+            inputs.get().forEach(function(el) {
+                el.checked = el == this && this.checked;
+            }, this);
+        });
+    </script>
 </head>
 <body>
 <div class="plane">
@@ -14,40 +24,40 @@
         <li class="row row--1">
             <ol class="seats" type="A">
                 <li class="seat">
-                    <input type="checkbox" id="1A" />
-                    <label for="1A">01</label>
+                    <input type="checkbox" id="01seat"/>
+                    <label for="01">01</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="1B" />
-                    <label for="1B">02</label>
+                    <input type="checkbox" id="02seat"/>
+                    <label for="02">02</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="1C" />
-                    <label for="1C">03</label>
+                    <input type="checkbox" id="03seat"/>
+                    <label for="03">03</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="1D" />
-                    <label for="1D">04</label>
+                    <input type="checkbox" id="04seat"/>
+                    <label for="04">04</label>
                 </li>
             </ol>
         </li>
         <li class="row row--2">
             <ol class="seats" type="A">
                 <li class="seat">
-                    <input type="checkbox" id="2A" />
-                    <label for="2A">05</label>
+                    <input type="checkbox" id="05seat"/>
+                    <label for="05">05</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="2B" />
-                    <label for="2B">06</label>
+                    <input type="checkbox" id="06seat"/>
+                    <label for="06">06</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="2C" />
-                    <label for="2C">07</label>
+                    <input type="checkbox" id="07seat"/>
+                    <label for="07">07</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="2D" />
-                    <label for="2D">08</label>
+                    <input type="checkbox" id="08seat"/>
+                    <label for="08">08</label>
                 </li>
 
             </ol>
@@ -55,20 +65,20 @@
         <li class="row row--3">
             <ol class="seats" type="A">
                 <li class="seat">
-                    <input type="checkbox" id="3A" />
-                    <label for="3A">09</label>
+                    <input type="checkbox" id="09seat"/>
+                    <label for="09">09</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="3B" />
-                    <label for="3B">10</label>
+                    <input type="checkbox" id="10seat"/>
+                    <label for="10">10</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="3C" />
-                    <label for="3C">11</label>
+                    <input type="checkbox" id="11seat"/>
+                    <label for="11">11</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="3D" />
-                    <label for="3D">12</label>
+                    <input type="checkbox" id="12seat"/>
+                    <label for="12">12</label>
                 </li>
 
             </ol>
@@ -76,20 +86,20 @@
         <li class="row row--4">
             <ol class="seats" type="A">
                 <li class="seat">
-                    <input type="checkbox" id="4A" />
-                    <label for="4A">13</label>
+                    <input type="checkbox" id="13seat"/>
+                    <label for="13">13</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="4B" />
-                    <label for="4B">14</label>
+                    <input type="checkbox" id="14seat"/>
+                    <label for="14">14</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="4C" />
-                    <label for="4C">15</label>
+                    <input type="checkbox" id="15seat"/>
+                    <label for="15">15</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="4D" />
-                    <label for="4D">16</label>
+                    <input type="checkbox" id="16seat"/>
+                    <label for="16">16</label>
                 </li>
 
             </ol>
@@ -97,20 +107,20 @@
         <li class="row row--5">
             <ol class="seats" type="A">
                 <li class="seat">
-                    <input type="checkbox" id="5A" />
-                    <label for="5A">17</label>
+                    <input type="checkbox" id="17seat"/>
+                    <label for="17">17</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="5B" />
-                    <label for="5B">18</label>
+                    <input type="checkbox" id="18seat"/>
+                    <label for="18">18</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="5C" />
-                    <label for="5C">19</label>
+                    <input type="checkbox" id="19seat"/>
+                    <label for="19">19</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="5D" />
-                    <label for="5D">20</label>
+                    <input type="checkbox" id="20seat"/>
+                    <label for="20">20</label>
                 </li>
 
             </ol>
@@ -118,40 +128,40 @@
         <li class="row row--6">
             <ol class="seats" type="A">
                 <li class="seat">
-                    <input type="checkbox" id="6A" />
-                    <label for="6A">21</label>
+                    <input type="checkbox" id="21seat"/>
+                    <label for="21">21</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="6B" />
-                    <label for="6B">22</label>
+                    <input type="checkbox" id="22seat"/>
+                    <label for="22">22</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="6C" />
-                    <label for="6C">23</label>
+                    <input type="checkbox" id="23seat"/>
+                    <label for="23">23</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="6D" />
-                    <label for="6D">24</label>
+                    <input type="checkbox" id="24seat"/>
+                    <label for="24">24</label>
 
             </ol>
         </li>
         <li class="row row--7">
             <ol class="seats" type="A">
                 <li class="seat">
-                    <input type="checkbox" id="7A" />
-                    <label for="7A">25</label>
+                    <input type="checkbox" id="25seat"/>
+                    <label for="25">25</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="7B" />
-                    <label for="7B">26</label>
+                    <input type="checkbox" id="26seat"/>
+                    <label for="26">26</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="7C" />
-                    <label for="7C">27</label>
+                    <input type="checkbox" id="27seat"/>
+                    <label for="27">27</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="7D" />
-                    <label for="7D">28</label>
+                    <input type="checkbox" id="28seat"/>
+                    <label for="28">28</label>
                 </li>
 
             </ol>
@@ -159,20 +169,20 @@
         <li class="row row--8">
             <ol class="seats" type="A">
                 <li class="seat">
-                    <input type="checkbox" id="8A" />
-                    <label for="8A">29</label>
+                    <input type="checkbox" id="29seat"/>
+                    <label for="29">29</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="8B" />
-                    <label for="8B">30</label>
+                    <input type="checkbox" id="30seat"/>
+                    <label for="30">30</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="8C" />
-                    <label for="8C">31</label>
+                    <input type="checkbox" id="31seat"/>
+                    <label for="31">31</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="8D" />
-                    <label for="8D">32</label>
+                    <input type="checkbox" id="32seat"/>
+                    <label for="32">32</label>
                 </li>
 
             </ol>
@@ -180,41 +190,20 @@
         <li class="row row--9">
             <ol class="seats" type="A">
                 <li class="seat">
-                    <input type="checkbox" id="9A" />
-                    <label for="9A">33</label>
+                    <input type="checkbox" id="33seat"/>
+                    <label for="33">33</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="9B" />
-                    <label for="9B">34</label>
+                    <input type="checkbox" id="34seat"/>
+                    <label for="34">34</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="9C" />
-                    <label for="9C">35</label>
+                    <input type="checkbox" id="35seat"/>
+                    <label for="35">35</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="9D" />
-                    <label for="9D">36</label>
-                </li>
-
-            </ol>
-        </li>
-        <li class="row row--10">
-            <ol class="seats" type="A">
-                <li class="seat">
-                    <input type="checkbox" id="10A" />
-                    <label for="10A">37</label>
-                </li>
-                <li class="seat">
-                    <input type="checkbox" id="10B" />
-                    <label for="10B">38</label>
-                </li>
-                <li class="seat">
-                    <input type="checkbox" id="10C" />
-                    <label for="10C">39</label>
-                </li>
-                <li class="seat">
-                    <input type="checkbox" id="10D" />
-                    <label for="10D">40</label>
+                    <input type="checkbox" id="36seat"/>
+                    <label for="36">36</label>
                 </li>
 
             </ol>
@@ -222,12 +211,33 @@
         <li class="row row--10">
             <ol class="seats" type="A">
                 <li class="seat">
-                    <input type="checkbox" id="11A" />
-                    <label for="10A">41</label>
+                    <input type="checkbox" id="37seat"/>
+                    <label for="37">37</label>
                 </li>
                 <li class="seat">
-                    <input type="checkbox" id="11B" />
-                    <label for="10B">42</label>
+                    <input type="checkbox" id="38seat"/>
+                    <label for="38">38</label>
+                </li>
+                <li class="seat">
+                    <input type="checkbox" id="39seat"/>
+                    <label for="39">39</label>
+                </li>
+                <li class="seat">
+                    <input type="checkbox" id="40seat"/>
+                    <label for="40">40</label>
+                </li>
+
+            </ol>
+        </li>
+        <li class="row row--10">
+            <ol class="seats" type="A">
+                <li class="seat">
+                    <input type="checkbox" id="41seat"/>
+                    <label for="41">41</label>
+                </li>
+                <li class="seat">
+                    <input type="checkbox" id="42seat"/>
+                    <label for="42">42</label>
                 </li>
             </ol>
         </li>
