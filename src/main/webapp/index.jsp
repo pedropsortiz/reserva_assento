@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="resources/style/style.scss">
 </head>
 <body>
+<form action="assentoCompra" method="GET">
 <div class="plane">
     <div class="cockpit">
         <h1>Por favor, escolha um assento:</h1>
@@ -233,9 +234,11 @@
         </li>
     </ol>
     <div class="exit exit--back fuselage">
-
+        <br>
+        <button type="submit" class="btn btn-primary">Confirmar assento</button>
     </div>
 </div>
+</form>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </body>
 </html>
